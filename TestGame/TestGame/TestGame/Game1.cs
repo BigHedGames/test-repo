@@ -19,7 +19,7 @@ namespace TestGame
     {
         // for the resolution
         const int WINDOW_WIDTH = 800;
-        const int WINDOW_HEIGHT = 600;
+        const int WINDOW_HEIGHT = 800;
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -88,7 +88,7 @@ namespace TestGame
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Azure);
+            GraphicsDevice.Clear(Color.Blue);
 
             // TODO: Add your drawing code here
 
