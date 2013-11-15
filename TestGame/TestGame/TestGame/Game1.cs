@@ -29,6 +29,7 @@ namespace TestGame
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
+            // changed resolution
             graphics.PreferredBackBufferWidth = WINDOW_WIDTH;
             graphics.PreferredBackBufferHeight = WINDOW_HEIGHT;
         }
