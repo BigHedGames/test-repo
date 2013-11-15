@@ -17,6 +17,10 @@ namespace TestGame
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        // for the resolution
+        const int WINDOW_WIDTH = 800;
+        const int WINDOW_HEIGHT = 600;
+
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
@@ -24,6 +28,9 @@ namespace TestGame
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            graphics.PreferredBackBufferWidth = WINDOW_WIDTH;
+            graphics.PreferredBackBufferHeight = WINDOW_HEIGHT;
         }
 
         /// <summary>
@@ -47,8 +54,6 @@ namespace TestGame
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
         }
 
         /// <summary>
